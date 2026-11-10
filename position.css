@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Position */
+
+.container {
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    color: white;
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* right: 0; */
+
+
+    /* position: sticky; */
+    /* top: 100px; */
+    position: relative;
+}
+
+.div {
+    height: 100dvh;
+    background-color: greenyellow;
+}
+
+.box {
+    width: 70px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    /* bottom: 0; */
+    /* right: 0; */
+    z-index: 3;
+}
+
+.box2 {
+    background-color: red;
+    z-index: 2;
+    top: 40px;
+}
+
+.box3 {
+    background-color: navy;
+    z-index: 1;
+    top: 60px;
+}
+
+
+
+.canva {
+    width: 50%;
+    margin: 20px auto;
+    min-height: 70dvh;
+    border: 1px solid;
+
+    background-image: linear-gradient(to bottom, #D9B0FF, #AF59FF, #470B8C);
+}
+
+.canva>h1 {
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width: 900px) {
+    .canva {
+        width: 70%;
+    }
+
+    .canva>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .canva {
+        width: 90%;
+    }
+
+    .canva>h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
