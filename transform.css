@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 70%;
+    height: 60dvh;
+    margin: 50px auto;
+    border: 1px dashed;
+    perspective: 300px;
+}
+
+.mobile {
+    height: 340px;
+    width: 200px;
+    /* border: 1px solid; */
+    margin: 20px auto;
+    border-radius: 20px;
+    background-color: bisque;
+    /* transform: rotate(12deg); */
+    /* rotate: 12deg; */
+    /* transition-property: all; */
+    /* transition-duration: .5s; */
+    /* transition-delay: 1s; */
+    /* transition-timing-function: cubic-bezier(0.38, -0.54, 0.18, 1.41); */
+
+    transition: all .5s cubic-bezier(0.38, -0.54, 0.18, 1.41);
+}
+
+.mobile:hover {
+    /* transform: translate(-40px, 70px); */
+    /* transform: rotate(40deg) scale(1.2) translate(200px); */
+    /* transform: translateZ(100px); */
+    /* transform: scale(1.2); */
+    /* transform: rotate(15deg) translate(40px); */
+    /* transform: skew(30deg); */
+
+    translate: 100px;
+    /* rotate: 20deg ; */
+    transform: rotateY(-30deg);
+    background-color: tomato;
+}
